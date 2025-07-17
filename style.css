@@ -1,0 +1,112 @@
+:root {
+    --color-aprobada: #f494b6;
+    --color-desbloqueada: #f6abc5;
+    --color-bloqueada: #f9c2d5;
+    --color-fondo: #fdf0f5;
+    --color-borde: #fbd9e5;
+    --color-texto: #333;
+    --color-texto-aprobada: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--color-bloqueada);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #d14d82;
+    margin: 0;
+}
+
+.anho {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.anho h2 {
+    color: #d14d82;
+    border-bottom: 2px solid var(--color-borde);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.semestre {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--color-fondo);
+    border-radius: 8px;
+}
+
+.semestre h3 {
+    color: #a8376a;
+    margin-top: 0;
+}
+
+.materias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.materia {
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid var(--color-borde);
+}
+
+.materia:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.materia.bloqueada {
+    background-color: var(--color-bloqueada);
+}
+
+.materia.desbloqueada {
+    background-color: var(--color-desbloqueada);
+}
+
+.materia.aprobada {
+    background-color: var(--color-aprobada);
+    color: var(--color-texto-aprobada);
+    text-decoration: line-through;
+}
+
+.materia .requisitos {
+    font-size: 0.8em;
+    margin-top: 5px;
+    font-style: italic;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .materias-container {
+        grid-template-columns: 1fr;
+    }
+}
