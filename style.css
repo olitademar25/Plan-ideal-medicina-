@@ -1,9 +1,9 @@
 :root {
-    --color-aprobada: #f494b6;
-    --color-desbloqueada: #f6abc5;
-    --color-bloqueada: #f9c2d5;
+    --color-aprobada: #C43670;
+    --color-desbloqueada: #F283AF;
+    --color-bloqueada: #FBD9E5;
     --color-fondo: #fdf0f5;
-    --color-borde: #fbd9e5;
+    --color-borde: #f9c2d5;
     --color-texto: #333;
     --color-texto-aprobada: #ffffff;
 }
@@ -39,7 +39,7 @@ h1 {
 }
 
 .anho h2 {
-    color: #d14d82;
+    color: #a8376a;
     border-bottom: 2px solid var(--color-borde);
     padding-bottom: 10px;
     margin-top: 0;
